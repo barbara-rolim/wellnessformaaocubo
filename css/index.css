@@ -1,0 +1,92 @@
+
+/* Fonte */
+.bitcount-grid-single {
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+
+.monoton-regular {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.navbar-brand {
+  font-family: "Monoton";
+  font-size: 2.4rem;
+  font-weight: 80;
+  color: a; 
+}
+
+
+
+.container-fluid{
+    display: flex;
+    opacity: 1;
+    background-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.btn{
+    color: black;
+}
+
+
+/* Gym Image */
+
+.wellnessview > img{
+    display: flex;
+    width: 100%;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logotipo{
+    color: #d4af37;
+}
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: black;
+    color: #d4af37;
+}
+
+
+.footer-link {
+  color: #d4af37;
+  text-decoration: none;
+  transition: color 10.0s;
+}
