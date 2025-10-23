@@ -1,0 +1,42 @@
+#main-container {
+    background-color: #f5f5f5;
+}
+
+#main-container .text {
+    text-align: center; /* centraliza o texto */
+    margin-bottom: 2rem; /* espaço abaixo do texto */
+    padding-top: 5px;
+    bottom: 5px;
+}
+
+#main-container .text h2 {
+    margin: 80px;
+    margin-bottom: 20px; /* espaço entre h2 e h4 */
+}
+
+#main-container .text h4 {
+    font-size: 20px;
+    font-weight: normal; /* tirar negrito */
+    color: #666; 
+    line-height: 1.5; /* altura linhas */
+}
+
+#card1 {
+    display: inline-block;
+    position: relative;
+ 
+}
+
+.card-title{
+    display: absolut;
+}
+
+.text-certificado {
+    display: inline-block;      /* faz o div ter largura apenas do conteúdo */
+    color:#d4af37;   
+    background-color: #f3eedf;   
+}
+
+.card-text {
+    color: #afaeae;
+}
