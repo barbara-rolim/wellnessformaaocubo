@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forma³ — Galeria</title>
+
+  <link rel="stylesheet" href="../css/galeria.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <i class="bi bi-boxes brand-icon"></i>
+        <span class="brand-name">Forma<sup>3</sup></span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Treinos</a></li>
+          <li><a href="#">Instrutores</a></li>
+          <li><a href="#">Planos</a></li>
+          <li><a class="is-active" href="#">Galeria</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-gold">Junte-se a Nós</a>
+    </div>
+    <div class="divider"></div>
+  </header>
+
+  <!-- Título + botões -->
+  <section class="gallery-hero">
+    <div class="container hero-inner">
+      <h1>Galeria</h1>
+      <p>Conheça nossas instalações e veja nossos eventos e atividades.</p>
+
+      <div class="pill-row">
+        <button class="pill is-active" data-filter="todas">Todas</button>
+        <button class="pill" data-filter="instalacoes">Instalações</button>
+        <button class="pill" data-filter="eventos">Eventos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria de fotos -->
+  <section class="gallery-grid">
+    <div class="container grid">
+      <figure class="shot" data-category="instalacoes">
+        <img src="assets/gal-1.jpg" alt="Interior moderno do ginásio">
+        <figcaption class="cap">Interior moderno do ginásio</figcaption>
+      </figure>
+      <figure class="shot" data-category="instalacoes">
+        <img src="assets/gal-2.jpg" alt="Tapete de treino com halteres">
+        <figcaption class="cap">Tapete de treino com halteres</figcaption>
+      </figure>
+      <figure class="shot" data-category="eventos">
+        <img src="assets/gal-3.jpg" alt="Competição com público">
+        <figcaption class="cap">Competição com público</figcaption>
+      </figure>
+      <figure class="shot" data-category="instalacoes">
+        <img src="assets/gal-4.jpg" alt="Detalhe de iluminação e bicicletas">
+        <figcaption class="cap">Detalhe de iluminação e bicicletas</figcaption>
+      </figure>
+      <figure class="shot" data-category="eventos">
+        <img src="assets/gal-5.jpg" alt="Aula de aeróbica ao ar livre">
+        <figcaption class="cap">Aula de aeróbica ao ar livre</figcaption>
+      </figure>
+      <figure class="shot" data-category="instalacoes">
+        <img src="assets/gal-6.jpg" alt="Saco e equipamento no cacifo">
+        <figcaption class="cap">Saco e equipamento no cacifo</figcaption>
+      </figure>
+      <figure class="shot" data-category="eventos">
+        <img src="assets/gal-7.jpg" alt="Aula de grupo — alongamentos">
+        <figcaption class="cap">Aula de grupo — alongamentos</figcaption>
+      </figure>
+      <figure class="shot" data-category="instalacoes">
+        <img src="assets/gal-8.jpg" alt="Box de treino — barra e anilhas">
+        <figcaption class="cap">Box de treino — barra e anilhas</figcaption>
+      </figure>
+      <figure class="shot" data-category="instalacoes">
+        <img src="assets/gal-9.jpg" alt="Receção / foyer do estúdio">
+        <figcaption class="cap">Receção / foyer do estúdio</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Popup -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lb-backdrop" data-close></div>
+    <div class="lb-panel">
+      <button class="lb-close" type="button" aria-label="Fechar" data-close>
+        <i class="bi bi-x"></i>
+      </button>
+      <div class="lb-image-wrap">
+        <img id="lb-img" alt="">
+        <div class="lb-cap" id="lb-cap"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="brand">
+          <i class="bi bi-boxes brand-icon"></i>
+          <span class="brand-name">Forma<sup>3</sup></span>
+        </a>
+        <p>Transforme seu corpo e mente com nossos instrutores especializados e instalações de última geração.</p>
+      </div>
+
+      <div>
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li>Início</li>
+          <li>Treinos</li>
+          <li>Instrutores</li>
+          <li>Planos</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Suporte</h4>
+        <ul>
+          <li>FAQ</li>
+          <li>Política de Privacidade</li>
+          <li>Termos de Serviço</li>
+          <li>Contato</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Siga-nos</h4>
+        <div class="socials">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-youtube"></i>
+        </div>
+        <p class="footer-hours">
+          <strong>Horário de Funcionamento</strong><br>
+          Seg–Sex: 6h – 23h<br>
+          Sáb–Dom: 8h – 20h
+        </p>
+      </div>
+    </div>
+    <p class="foot-legal">© 2025 Forma³. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Filtro
+    const pills = document.querySelectorAll('.pill');
+    const shots = document.querySelectorAll('.shot');
+    pills.forEach(btn => {
+      btn.addEventListener('click', () => {
+        pills.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        const cat = btn.dataset.filter;
+        shots.forEach(s => {
+          s.classList.toggle('is-hidden', cat !== 'todas' && s.dataset.category !== cat);
+        });
+      });
+    });
+
+    // Lightbox
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const lbCap = document.getElementById('lb-cap');
+    const imgs = document.querySelectorAll('.grid img');
+
+    imgs.forEach(img => {
+      img.addEventListener('click', () => {
+        lbImg.src = img.src;
+        lbCap.textContent = img.alt;
+        lb.classList.add('is-open');
+      });
+    });
+
+    lb.addEventListener('click', e => {
+      if (e.target.closest('[data-close]')) {
+        lb.classList.remove('is-open');
+        lbImg.src = '';
+        lbCap.textContent = '';
+      }
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        lb.classList.remove('is-open');
+        lbImg.src = '';
+        lbCap.textContent = '';
+      }
+    });
+  </script>
+</body>
+</html>
