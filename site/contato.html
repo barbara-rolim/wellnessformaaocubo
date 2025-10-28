@@ -44,7 +44,7 @@
   <section class="contact-hero">
     <div class="container hero-inner">
       <h1>Entre em Contato</h1>
-      <p>Tem dúvidas? Adoraríamos ouvir você. Envie-nos uma mensagem e responderemos o mais breve possível.</p>
+      <p>Tem dúvidas? Envie-nos uma mensagem e responderemos o mais breve possível.</p>
     </div>
   </section>
 
@@ -58,7 +58,7 @@
           <span class="info-icon"><i class="bi bi-geo-alt"></i></span>
           <div class="info-body">
             <h3>Localização</h3>
-            <p>Rua do Fitness, 123<br>1000-001 Lisboa, Portugal</p>
+            <p>Rua Ciríaco Cardoso, 186<br>4150-212 Porto, Portugal</p>
           </div>
         </article>
 
@@ -74,7 +74,7 @@
           <span class="info-icon"><i class="bi bi-envelope"></i></span>
           <div class="info-body">
             <h3>Email</h3>
-            <p>info@forma3.pt<br>apoio@forma3.pt</p>
+            <p>info@forma3.pt<br>apoiocliente@forma3.pt</p>
           </div>
         </article>
 
@@ -92,11 +92,11 @@
         <div class="row two">
           <div class="field">
             <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" placeholder="Seu nome completo" required>
+            <input id="nome" name="nome" type="text" placeholder="O seu nome completo" required>
           </div>
           <div class="field">
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="seu@email.com" required>
+            <input id="email" name="email" type="email" placeholder="oseu@email.com" required>
           </div>
         </div>
 
@@ -117,18 +117,46 @@
         <div class="row">
           <div class="field">
             <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte-nos mais sobre sua dúvida ou interesse..."></textarea>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="indique a sua dúvida..."></textarea>
           </div>
         </div>
 
+      <!-- caixa de feedback (começa escondida) -->
+            <div id="form-status" class="form-status" role="alert"></div>
+
         <button class="btn btn-gold btn-block" type="submit">Enviar Mensagem</button>
       </form>
+<script>
+  const form = document.getElementById('contact-form');
+  const statusBox = document.getElementById('form-status');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // evita recarregar a página
+
+    const nomeVal = form.nome.value.trim();
+    const emailVal = form.email.value.trim();
+    const assuntoVal = form.assunto.value.trim();
+    const msgVal = form.mensagem.value.trim();
+
+    if (!nomeVal || !emailVal || !assuntoVal || !msgVal) {
+      statusBox.textContent = "❌ Falta preencher todos os campos obrigatórios.";
+      statusBox.className = "form-status is-error";
+      return;
+    }
+
+    statusBox.textContent = "✅ Mensagem enviada com sucesso!";
+    statusBox.className = "form-status is-success";
+
+    // limpa os campos (opcional)
+    // form.reset();
+  });
+</script>
 
       <!-- Mapa (placeholder) -->
       <div class="map-card">
         <div class="map-inner">
           <i class="bi bi-geo-alt"></i>
-          <p><strong>Mapa de Localização</strong><br>Rua do Fitness, 123 – Lisboa</p>
+          <p><strong> Onde estamos? </strong><br>Rua Ciríaco Cardoso, 4150-212 Porto</p>
         </div>
       </div>
 
