@@ -40,6 +40,11 @@
     color: black;
 }
 
+.logotipo{
+    color: #d4af37;
+}
+
+
 #main-container {
     background-color: #f5f5f5;
     font-family: 'Bitcount Grid Single", system-ui';
@@ -57,8 +62,13 @@
 }
 
 .cardInstrutores {
-  border: none;
+  position: relative;
   border: 14px;
+  overflow: hidden;
+}
+
+.cardInstrutores:hover {
+  background-color: #f1e7c3;
 }
 
 .card-img-top {
@@ -69,6 +79,7 @@
 
 .card-title {
     color: #222;
+    font-size: 24px;
 }
 
 .card-desc {
@@ -99,16 +110,10 @@
 .footer-link {
   color: #d4af37;
   text-decoration: none;
-  transition: color 3s;
 }
 
 .social-icons a {
   color: #d4af37;             
   text-decoration: none;       
-  transition: color 3s;
   margin-right: 10px;               
-}
-
-.social-icons a:hover {
-  color: black;               
 }
