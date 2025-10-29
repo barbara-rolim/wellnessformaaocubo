@@ -1,5 +1,5 @@
 
-/* Fonte */
+/* Fontes */
 .bitcount-grid-single {
   font-family: "Bitcount Grid Single", system-ui;
   font-optical-sizing: auto;
@@ -11,6 +11,13 @@
     "ELSH" 0,
     "ELXP" 0;
 }
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
 
 
 .monoton-regular {
@@ -58,6 +65,13 @@
   height: 100vh;
 }
 
+.botao2{
+  background-color: #d4af37;
+  border-color: black;
+  color: black;
+  margin: 50px;
+} 
+
 
 /* footer dentro do hero */
 .hero-footer {
@@ -66,6 +80,7 @@
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
   padding: 35px 0;
+  color: #d4af37 !important;
 }
 
 .hero-footer h3 {
@@ -88,8 +103,12 @@
 
 /* Depoimentos Section */
 
+.titulodepoimentos{
+  margin: 50px;
+  padding: 50px;
+}
+
 .depoimentos{
-  padding: 30px;
   background-color: #f5f5f5;
 }
 
@@ -102,6 +121,36 @@
   padding: 25px;
   text-align: center;
 }
+
+.avatar{
+  width: 64px;
+  height: 64px;
+  font-size: 1.25rem;
+  background-color: #d4af37 !important;
+  place-self: center;
+}
+
+
+.card{
+  transition: 0.9s; /* suaviza a transição */
+}
+
+
+.card:hover {
+  background-color:#d4af37d8; /* muda a cor quando passa o mouse */
+  opacity: 0.8;
+  transform: scale(1.05); /* aumenta um pouco de tamanho */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* adiciona sombra */
+}
+
+.botaocliente{
+  color: black;
+  background-color: #d4af37;
+  border-color: black;
+}
+
+
+
 
 /* Logótipo Navbar */
 
@@ -116,7 +165,36 @@
 
 
 
+
+
 /* Avaliações e Prémios */
+
+/* Avaliações */
+
+.icon-wrapper{
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ffe066, #ffd633); /* fundo brilhante */
+  border-radius: 50%; 
+  box-shadow: 0 0 15px #d4af37;
+  justify-self: center;
+  color: black;
+}
+
+
+.bi{
+  color: black !important;
+}
+
+.premios-header{
+  margin: 50px;
+  padding: 50px;
+}
+
+.premios {
+  margin: 50px;
+}
+
 
 .card{
     max-width: 18rem;
@@ -124,8 +202,8 @@
 }
 
 .row{
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 300px;
+  padding-right: 200px;
 }
 
 .titulopremios{
@@ -135,7 +213,73 @@
 
 
 
+.rating {
+  border: solid;
+  border-color: #d4af37;
+  padding: 80px;
+  border-radius: 50px;
+  width: 800px;
+  justify-self: anchor-center;
+  margin: 50px;
+}
 
+
+
+
+/* Receitas */
+
+.card{
+  border-color:#d4af37;
+}
+
+.receitas-header{
+  margin: 50px;
+  padding: 50px;
+}
+
+.receitas-header-text{
+  color: gray;
+}
+
+
+.receitas{
+  text-align: -webkit-center;
+  background-color: #f5f5f5;
+}
+
+
+.receitas .card-img-top {
+  height: 220px;            
+  object-fit: cover;        
+  object-position: center;  
+  width: 100%;
+}
+
+
+.receitas-text{
+  color: gray;
+}
+
+.planosreceitas{
+    padding: 25px;
+    margin: 25px
+}
+
+.receita-info {
+  color: #d4af37;
+  padding-left: 20px;
+  padding-bottom: 10px;
+
+}
+
+
+/* Sobre */
+.textsobrenos{
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-size: 25px;
+  color: black;
+}
 
 
 
@@ -151,5 +295,8 @@
 .footer-link {
   color: #d4af37;
   text-decoration: none;
-  transition: color 10.0s;
+}
+
+.bi2{
+  color: #d4af37;
 }
