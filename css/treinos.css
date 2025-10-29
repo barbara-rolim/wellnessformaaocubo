@@ -65,6 +65,7 @@
   position: relative;
   border: 14px;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .cardTreino:hover {
