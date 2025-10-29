@@ -102,6 +102,17 @@
     font-weight: 700;
 }
 
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; 
+    height: 30px;
+    cursor: pointer;         
+    text-decoration: none;
+    color: black;
+  }
+
 .footer{
     background-color: black;
     color: #d4af37;
