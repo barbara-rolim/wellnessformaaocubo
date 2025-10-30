@@ -157,39 +157,41 @@
         </article>
       </div>
 
-      <!-- Coluna direita: formulário -->
-      <form class="form-card" action="#" method="post" onsubmit="return false" novalidate>
-        <div class="row two">
-          <div class="field">
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" placeholder="O seu nome completo" required>
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="oseu@email.com" required>
-          </div>
-        </div>
+     <!-- Coluna direita: formulário -->
+<form id="contact-form" class="form-card" action="#" method="post" onsubmit="return false" novalidate>
 
-        <div class="row">
-          <div class="field">
-            <label for="telefone">Telefone</label>
-            <input id="telefone" name="telefone" type="tel" placeholder="+351 912 345 678">
-          </div>
-        </div>
+  <!-- Nome + Email lado-a-lado (grid inline para não colidir com Bootstrap nem com o teu .row) -->
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap:.75rem;">
+    <div class="field">
+      <label for="nome">Nome</label>
+      <input id="nome" name="nome" type="text" class="form-control" placeholder="O seu nome completo" required>
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" class="form-control" placeholder="oseu@email.com" required>
+    </div>
+  </div>
 
-        <div class="row">
-          <div class="field">
-            <label for="assunto">Assunto</label>
-            <input id="assunto" name="assunto" type="text" placeholder="Como podemos ajudar?">
-          </div>
-        </div>
+  <div class="field" style="margin-top:.75rem;">
+    <label for="telefone">Telefone</label>
+    <input id="telefone" name="telefone" type="tel" class="form-control" placeholder="+351 912 345 678">
+  </div>
 
-        <div class="row">
-          <div class="field">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" placeholder="indique a sua dúvida..."></textarea>
-          </div>
-        </div>
+  <div class="field" style="margin-top:.75rem;">
+    <label for="assunto">Assunto</label>
+    <input id="assunto" name="assunto" type="text" class="form-control" placeholder="Como podemos ajudar?">
+  </div>
+
+  <div class="field" style="margin-top:.75rem;">
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" name="mensagem" rows="5" class="form-control" placeholder="indique a sua dúvida..."></textarea>
+  </div>
+
+  <!-- feedback -->
+  <div id="form-status" class="form-status" role="alert"></div>
+
+  <button class="btn btn-gold btn-block" type="submit" style="margin-top:.75rem;">Enviar Mensagem</button>
+</form>
 
       <!-- caixa de feedback (começa escondida) -->
             <div id="form-status" class="form-status" role="alert"></div>
@@ -224,77 +226,90 @@
  <!-- Footer -->
 
     <section class="Footer">
-        <footer class="footer pt-5 pb-3">
-            <div class="container">
-                <div class="row gy-4">
-                  
-                  <!-- Coluna 1 -->
-                    <div class="col-md-3">
-                        <h5 class="fw-bold mb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                                class="bi bi-boxes" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z" />
-                            </svg>
-                            <i class="bi bi-dumbbell me-2"></i> Forma³
-                        </h5>
-                        <p>
-                            Transforme seu corpo e mente com nossos instrutores
-                            especializados e instalações de última geração.
-                        </p>
-                    </div>
-
-                    <!-- Coluna 2 -->
-                    <div class="col-md-3">
-                        <h5 class="fw-bold mb-3">Links Rápidos</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="footer-link">Início</a></li>
-                            <li><a href="#" class="footer-link">Treinos</a></li>
-                            <li><a href="#" class="footer-link">Instrutores</a></li>
-                            <li><a href="#" class="footer-link">Planos</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Coluna 3 -->
-                    <div class="col-md-3">
-                        <h5 class="fw-bold mb-3">Suporte</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="footer-link">FAQ</a></li>
-                            <li>
-                                <a href="#" class="footer-link">Política de Privacidade</a>
-                            </li>
-                            <li><a href="#" class="footer-link">Termos de Serviço</a></li>
-                            <li><a href="#" class="footer-link">Contato</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Coluna 4 -->
-                    <div class="col-md-3">
-                        <h5 class="fw-bold mb-3">Siga-nos</h5>
-                        <div class="social-icons mb-3">
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-twitter"></i></a>
-                            <a href="#"><i class="bi bi-youtube"></i></a>
-                        </div>
-                        <h6 class="fw-bold">Horário de Funcionamento</h6>
-                        <p class="mb-0">Seg–Sex: 6h – 23h</p>
-                        <p>Sáb–Dom: 8h – 13h</p>
-                        <p>Feriados: Encerrados</p>
-                    </div>
-                </div>
-
-                <hr class="border-warning my-4" />
-
-                <div class="text-center">
-                    <small>&copy; 2025 <strong>Forma³</strong>. Todos os direitos
-                        reservados.</small>
-                </div>
+      <footer class="footer pt-5 pb-3">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- Coluna 1 -->
+            <div class="col-md-3">
+              <h5 class="fw-bold mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi2 bi-boxes"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"
+                  />
+                </svg>
+                <i class="bi2 bi-dumbbell me-2"></i> Forma³
+              </h5>
+              <p>
+                Transforme seu corpo e mente com nossos instrutores
+                especializados e instalações de última geração.
+              </p>
             </div>
-        </footer>
+
+            <!-- Coluna 2 -->
+            <div class="col-md-3">
+              <h5 class="fw-bold mb-3">Links Rápidos</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="footer-link">Início</a></li>
+                <li><a href="#" class="footer-link">Treinos</a></li>
+                <li><a href="#" class="footer-link">Instrutores</a></li>
+                <li><a href="#" class="footer-link">Planos</a></li>
+              </ul>
+            </div>
+
+            <!-- Coluna 3 -->
+            <div class="col-md-3">
+              <h5 class="fw-bold mb-3">Suporte</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="footer-link">FAQ</a></li>
+                <li>
+                  <a href="#" class="footer-link">Política de Privacidade</a>
+                </li>
+                <li><a href="#" class="footer-link">Termos de Serviço</a></li>
+                <li><a href="#" class="footer-link">Contato</a></li>
+              </ul>
+            </div>
+
+            <!-- Coluna 4 -->
+            <div class="col-md-3">
+              <h5 class="fw-bold mb-3">Siga-nos</h5>
+              <div class="social-icons mb-3">
+                <a href="#"><i class="bi2 bi-facebook"></i></a>
+                <a href="#"><i class="bi2 bi-instagram"></i></a>
+                <a href="#"><i class="bi2 bi-twitter"></i></a>
+                <a href="#"><i class="bi2 bi-youtube"></i></a>
+              </div>
+              <h6 class="fw-bold">Horário de Funcionamento</h6>
+              <p class="mb-0">Seg–Sex: 6h – 23h</p>
+              <p>Sáb–Dom: 8h – 13h</p>
+              <p>Feriados: Encerrados</p>
+            </div>
+          </div>
+
+          <hr class="border-warning my-4" />
+
+          <div class="text-center">
+            <small
+              >&copy; 2025 <strong>Forma³</strong>. Todos os direitos
+              reservados.</small
+            >
+          </div>
+        </div>
+      </footer>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Bootstrap  -->
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
