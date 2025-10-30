@@ -4,21 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treinos</title>
+    <title>Planos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="../css/treinos.css">
+    <link rel="stylesheet" href="../css/planos.css">
 
     <!-- Link Fonte -->
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet" />
-
-
 </head>
 
 <body>
-
     <!-- Header -->
     <section class="navBar">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -38,7 +35,7 @@
                     <a class="navbar-brand" style="margin-right: 10rem" href="#">Forma³</a>
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Início</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="treinos.html">Treinos</a>
@@ -64,135 +61,127 @@
 
     <!-- Seccao Principal -->
 
-    <section id="main-container" class="pt-5">
+    <section id="main-container" class="py-5">
         <div class="container text-center">
 
             <div class="text">
-                <h2>Nossos Programas de Treino</h2>
-                <p>Escolha entre uma ampla variedade de programas projetados para ajudá-lo a alcançar seus objetivos
-                    fitness, <br /> desde treinos de alta intensidade até sessões relaxantes de yoga.</p>
+                <h2 class="">Planos de Assinatura</h2>
+                <p>Escolha o plano perfeito para sua jornada fitness. <br /> Todas as assinaturas incluem acesso às
+                    nossas instalações de última geração.</p>
             </div>
-
-            <div class="row g-4">
-                <!-- CARDS -->
-                <div class="col-md-4 col-lg-4">
-                    <div class="card cardTreino shadow-lg">
-                        <img src="../imagens/gym.webp" class="card-img-top" alt="Gym">
-
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Mensal</h4>
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Musculação</h5>
-                            <p class="card-desc">Desenvolvimento de força e massa muscular com equipamentos de ponta.
-                            </p>
-                            <p class="d-flex gap-2">
-                                <i class="bi bi-calendar"></i>
-                                Segunda a Sexta <span class="ms-4">6h - 23h</span>
-                            </p>
-                            <p class="d-flex gap-2">
-                                <i class="bi bi-calendar"></i>
-                                Sábado a Domingo <span class="ms-2">8h - 20h</span>
-                            </p>
+                            <h1 class="card-title pricing-card-title">€59/<small
+                                    class="text-body-secondary fw-light">mês</small></h1>
+                            <ul class="list-unstyled mt-3 mb-5">
+                                <li><i class="bi bi-check-lg"></i> Acesso ao ginásio</li>
+                                <li><i class="bi bi-check-lg"></i> Área de musculação completa</li>
+                                <li><i class="bi bi-check-lg"></i> Zona de cardio</li>
+                                <li><i class="bi bi-check-lg"></i> 5 aulas em grupo por mês</li>
+                                <li><i class="bi bi-check-lg"></i> Avaliação física inicial</li>
+                                <li><i class="bi bi-check-lg"></i> Vestiários e armários</li>
+                            </ul> <button id="escolherPlanoBtn1" type="button"
+                                class="button w-100 btn btn-lg btn-light">
+                                Escolher Plano
+                            </button>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-4 col-lg-4">
-                    <div class="card cardTreino shadow-lg">
-                        <img src="../imagens/cardio.jpg" class="card-img-top" alt="Cardio">
-
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Trimestral</h4>
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Cardio</h5>
-                            <p class="card-desc">Melhore sua resistência cardiovascular com esteiras, bicicletas e
-                                elípticos.</p>
-                            <p class="d-flex gap-2">
-                                <i class="bi bi-calendar"></i>
-                                Segunda e Sexta <span id="horas">7h - 8h</span>
-                            </p>
-                            <p class="d-flex gap-2">
-                                <i class="bi bi-calendar"></i>
-                                Terça e Quinta <span id="horas">18h - 19h</span>
-                            </p>
+                            <h1 class="card-title pricing-card-title">€149<small class="text-body-secondary fw-light">/3
+                                    meses</small></h1>
+                            <ul class="list-unstyled mt-3 mb-5">
+                                <li><i class="bi bi-check-lg"></i> Todos os benefícios do plano mensal</li>
+                                <li><i class="bi bi-check-lg"></i> Aulas em grupo ilimitadas</li>
+                                <li><i class="bi bi-check-lg"></i> Consulta nutricional</li>
+                                <li><i class="bi bi-check-lg"></i> Acesso à sauna e spa</li>
+                                <li><i class="bi bi-check-lg"></i> 2 convites para amigos/mês</li>
+                                <li><i class="bi bi-check-lg"></i> Prioridade na marcação de aulas</li>
+                            </ul> <button id="escolherPlanoBtn2" type="button"
+                                class="button w-100 btn btn-lg btn-light">
+                                Escolher Plano
+                            </button>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-4 col-lg-4">
-                    <div class="card cardTreino shadow-lg">
-                        <img src="../imagens/yoga1.webp" class="card-img-top" alt="Yoga">
-
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Yoga</h5>
-                            <p class="card-desc">Encontre equilíbrio e flexibilidade com nossos instrutores experientes.
-                            </p>
-                            <p class="d-flex gap-2">
-                                <i class="bi bi-calendar"></i>
-                                Segunda e Quarta <span class="horas">9h - 10h</span>
-                            </p>
-                            <p class="d-flex gap-2">
-                                <i class="bi bi-calendar"></i>
-                                Terça e Quinta <span class="horas">19h - 20h</span>
-                            </p>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Anual</h4>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-lg-4">
-                    <div class="card cardTreino shadow-lg">
-                        <img src="../imagens/boxe.jpg" class="card-img-top" alt="Boxe">
-
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Boxe</h5>
-                            <p class="card-desc">Aprenda técnicas e desenvolva potência com nossas aulas de boxe.</p>
-                            <p class="d-flex gap-2">
-                                <i class="bi bi-calendar"></i>
-                                Terça e Quinta <span class="horas">17h - 18h</span>
-                            </p>
-                            <p class="d-flex gap-2">
-                                <i class="bi bi-calendar"></i>
-                                Sexta e Sábado <span class="horas">11h - 12h</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-lg-4">
-                    <div class="card cardTreino shadow-lg">
-                        <img src="../imagens/cross.jpg" class="card-img-top" alt="CrossFit">
-
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">CrossFit</h5>
-                            <p class="card-desc">Treino funcional intenso para desenvolver força e resistência.</p>
-                            <p class="d-flex gap-2">
-                                <i class="bi bi-calendar"></i>
-                                Segunda a Sexta <span class="horas">6h - 7h</span>
-                            </p>
-                            <p class="d-flex gap-2">
-                                <i class="bi bi-calendar"></i>
-                                Segunda a Sexta <span class="horas">18h - 19h</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-lg-4">
-                    <div class="card cardTreino shadow-lg">
-                        <img src="../imagens/funcional.jpg" class="card-img-top" alt="Funcional">
-
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Funcional</h5>
-                            <p class="card-desc">Sessões em grupo de alta energia para motivar e desafiar você.</p>
-                            <p class="d-flex gap-2">
-                                <i class="bi bi-calendar"></i>
-                                Quarta e Sexta <span class="horas">17h - 18h</span>
-                            </p>
-                            <p class="d-flex gap-2">
-                                <i class="bi bi-calendar"></i>
-                                Terça e Quinta <span class="horas">8h - 9h</span>
-                            </p>
+                            <h1 class="card-title pricing-card-title">€499<small
+                                    class="text-body-secondary fw-light">/ano</small></h1>
+                            <ul class="list-unstyled mt-3 mb-5">
+                                <li><i class="bi bi-check-lg"></i> Todos os benefícios do plano trimestral</li>
+                                <li><i class="bi bi-check-lg"></i> Treino personalizado ilimitado</li>
+                                <li><i class="bi bi-check-lg"></i> Plano alimentar personalizado</li>
+                                <li><i class="bi bi-check-lg"></i> 2 sessões de massagem/mês</li>
+                                <li><i class="bi bi-check-lg"></i> Convites ilimitados para amigos</li>
+                                <li><i class="bi bi-check-lg"></i> Desconto em produtos da loja</li>
+                            </ul> <button id="escolherPlanoBtn3" type="button"
+                                class="button w-100 btn btn-lg btn-light">
+                                Escolher Plano
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <section class="compare-section text-center">
+            <h3 class="text display-6 mb-4">Compare os Planos</h3>
+
+            <div class="tabela1 container">
+                <table class="table-custom">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Sem Desconto</th>
+                            <th>15% Desconto</th>
+                            <th>35% Desconto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Mensal</th>
+                            <td><i class="bi bi-check-lg"></i></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Trimestral</th>
+                            <td></td>
+                            <td><i class="bi bi-check-lg"></i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Anual</th>
+                            <td></td>
+                            <td></td>
+                            <td><i class="bi bi-check-lg"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+                <div>
+                <p class="table-note">
+                    * Todos os planos têm período de fidelização. Consulte os termos e condições.
+                </p>
+                </div>
+        </section>
+
 
 
         <!-- Footer -->
@@ -268,6 +257,21 @@
         </section>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.getElementById("escolherPlanoBtn1").addEventListener("click", function () {
+                alert("BEM-VINDA A VIDA FITNESS! Seu contrato foi enviado com sucesso para o seu e-mail!");
+            });
+        </script>
+        <script>
+            document.getElementById("escolherPlanoBtn2").addEventListener("click", function () {
+                alert("BEM-VINDA A VIDA FITNESS! Seu contrato foi enviado com sucesso para o seu e-mail!");
+            });
+        </script>
+        <script>
+            document.getElementById("escolherPlanoBtn3").addEventListener("click", function () {
+                alert("BEM-VINDA A VIDA FITNESS! Seu contrato foi enviado com sucesso para o seu e-mail!");
+            });
+        </script>
 </body>
 
 </html>

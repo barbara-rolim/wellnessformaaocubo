@@ -26,15 +26,6 @@
   <!-- Link CSS -->
   <link rel="stylesheet" href="../css/index.css" />
   </head>
-  <!-- CSS desta página -->
-  <link rel="stylesheet" href="../css/contato.css">
-
-  <!-- Bootstrap Icons (cubo + restantes ícones) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-
-  <!-- Fonte -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  </head>
 
   <body>
     <!-- Header -->
@@ -55,7 +46,7 @@
             <a class="navbar-brand" style="margin-right: 10rem" href="#">Forma³</a>
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">Início</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="treinos.html">Treinos</a>
@@ -66,8 +57,9 @@
               <li class="nav-item">
                 <a class="nav-link active" href="planos.html">Planos</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
-              <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+              <li class="nav-item"><a class="nav-link active" href="galeria.html">Galeria</a></li>
+              <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+
             </ul>
 
             <a class="btn btn-outline-success" href="planos.html"
@@ -79,113 +71,87 @@
       </nav>
     </section>
 
-    <!-- ===== Título ===== -->
-    <section class="contact-hero">
+    <!-- Título + botões -->
+    <section class="gallery-hero">
       <div class="container hero-inner">
-        <h1>Entre em Contato</h1>
-        <p>Tem dúvidas? Envie-nos uma mensagem e responderemos o mais breve possível.</p>
+        <h1>Galeria</h1>
+        <p>Conheça nossas instalações e veja nossos eventos e atividades.</p>
+
+
       </div>
     </section>
 
-    <!-- ===== Conteúdo (cards + formulário) ===== -->
-    <section class="contact-main">
-      <div class="container contact-grid">
-
-        <!-- Coluna esquerda: cards -->
-        <div class="info-col">
-          <article class="info-card">
-            <span class="info-icon"><i class="bi bi-geo-alt"></i></span>
-            <div class="info-body">
-              <h3>Localização</h3>
-              <p>Rua Ciríaco Cardoso, 186<br>4150-212 Porto, Portugal</p>
-            </div>
-          </article>
-
-          <article class="info-card">
-            <span class="info-icon"><i class="bi bi-telephone"></i></span>
-            <div class="info-body">
-              <h3>Telefone</h3>
-              <p>+351 21 123 4567<br>+351 91 234 5678</p>
-            </div>
-          </article>
-
-          <article class="info-card">
-            <span class="info-icon"><i class="bi bi-envelope"></i></span>
-            <div class="info-body">
-              <h3>Email</h3>
-              <p>info@forma3.pt<br>apoiocliente@forma3.pt</p>
-            </div>
-          </article>
-
-          <article class="info-card">
-            <span class="info-icon"><i class="bi bi-clock-history"></i></span>
-            <div class="info-body">
-              <h3>Horário de Funcionamento</h3>
-              <p>Segunda a Sexta: 6h – 23h<br>Sábado e Domingo: 8h – 20h</p>
-            </div>
-          </article>
-        </div>
-
-        <!-- Coluna direita: formulário -->
-        <form id="contact-form" class="form-card" action="#" method="post" onsubmit="return false" novalidate>
-
-          <!-- Nome + Email lado-a-lado (grid inline para não colidir com Bootstrap nem com o teu .row) -->
-          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:.75rem;">
-            <div class="field">
-              <label for="nome">Nome</label>
-              <input id="nome" name="nome" type="text" class="form-control" placeholder="O seu nome completo" required>
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" class="form-control" placeholder="oseu@email.com" required>
-            </div>
-          </div>
-
-          <div class="field" style="margin-top:.75rem;">
-            <label for="telefone">Telefone</label>
-            <input id="telefone" name="telefone" type="tel" class="form-control" placeholder="+351 912 345 678">
-          </div>
-
-          <div class="field" style="margin-top:.75rem;">
-            <label for="assunto">Assunto</label>
-            <input id="assunto" name="assunto" type="text" class="form-control" placeholder="Como podemos ajudar?">
-          </div>
-
-          <div class="field" style="margin-top:.75rem;">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" class="form-control"
-              placeholder="indique a sua dúvida..."></textarea>
-          </div>
-
-          <!-- feedback -->
-          <div id="form-status" class="form-status" role="alert"></div>
-
-          <button class="btn btn-gold btn-block" type="submit" style="margin-top:.75rem;">Enviar Mensagem</button>
-        </form>
-
-        <!-- caixa de feedback (começa escondida) -->
-        <div id="form-status" class="form-status" role="alert"></div>
-
-        <button class="btn btn-gold btn-block" type="submit">Enviar Mensagem</button>
-        </form>
-
-        </script>
-
-        <!-- Mapa (placeholder) -->
-        <div class="map-card">
-          <div class="map-inner">
-            <i class="bi bi-geo-alt"></i>
-            <h3 class="map-title">Onde estamos?</h3>
-            <p class="map-address">Rua Ciriáco Cardoso, 4150-212 Porto</p>
-
-            <div class="map-embed">
-              <iframe src="https://www.google.com/maps?q=Rua+Ciriaco+Cardoso,+4150-212+Porto&output=embed" width="100%"
-                height="260" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-            </div>
-          </div>
-        </div>
+    <!-- Galeria de fotos -->
+    <section class="gallery-grid">
+      <div class="container grid">
+        <figure class="shot" data-category="instalacoes">
+          <img
+            src="https://img.freepik.com/fotos-premium/interior-elegante-de-ginasio-preto-com-moveis-modernos-geracao-ai_724548-27354.jpg"
+            alt="Interior elegante de ginásio" class=" nofocus" tabindex="0"
+            aria-label="Interior elegante de ginásio preto com móveis modernos geração ai ..." role="button"
+            data-bm="5">" alt="Interior moderno do ginásio">
+          <figcaption class="cap">Interior moderno do ginásio</figcaption>
+        </figure>
+        <figure class="shot" data-category="instalacoes">
+          <img
+            src="https://img.freepik.com/fotos-gratis/linhas-de-halteres-no-ginasio_164138-241.jpg?size=626&amp;ext=jpg"
+            alt="Equipamento desportivo no ginásio. halteres de peso diferente close-up ..." class=" nofocus"
+            tabindex="0" aria-label="Equipamento desportivo no ginásio. halteres de peso diferente close-up ..."
+            role="button" data-bm="6">
+          <figcaption class="cap">Treino com halteres</figcaption>
+        </figure>
+        <figure class="shot" data-category="eventos">
+          <img
+            src="https://tse3.mm.bing.net/th/id/OIP.1aRNvATZa30--HSgEh4swQHaFj?rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3"
+            alt="Competição com público" class=" nofocus" tabindex="0"
+            aria-label="O Professor Explica #45 Aulas de grupo para melhorar no ginásio - nutree" role="button">"
+          alt="Competição com público">
+          <figcaption class="cap">Competição com público</figcaption>
+        </figure>
+        <figure class="shot" data-category="instalacoes">
+          <img
+            src="https://tse2.mm.bing.net/th/id/OIP._O27OMRE9aKSbIZaAw2umwAAAA?rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3"
+            alt="Aula de Spinnig" class=" nofocus" tabindex="0"
+            aria-label="Como aumentar a rentabilidade da academia com o spinning?" role="button" data-bm="6">"
+          alt="Detalhe de iluminação e bicicletas">
+          <figcaption class="cap">Aula de Spinning</figcaption>
+        </figure>
+        <figure class="shot" data-category="eventos">
+          <img
+            src="https://th.bing.com/th/id/R.c10646766b31df8b2bdc8063b414896c?rik=PAup1WjU6uOQLg&amp;riu=http%3a%2f%2fi-exc.ccm2.net%2fiex%2f1280%2f1278718731%2f1088618.jpg&amp;ehk=iYo9uS26b1Yh3Kr09dugY9KVsGDQaQt5jpon6g9iZWs%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0"
+            alt="Veja 9 dicas de exercícios aeróbicos ao ar livre" class=" nofocus" tabindex="0"
+            aria-label="Veja 9 dicas de exercícios aeróbicos ao ar livre" role="button">" alt="Aula de aeróbica ao ar
+          livre">
+          <figcaption class="cap">Aula de aeróbica ao ar livre</figcaption>
+        </figure>
+        <figure class="shot" data-category="instalacoes">
+          <img
+            src="https://estudioamatam.com/wp-content/uploads/2017/09/31-estudioamatam-arquitectura-design-ginasio-kalorias-montijo-balneariofeminino-1612x1075.jpg"
+            alt="Vista da área dos cacifos do balneário e vestiário feminino. - estudio ..." class=" nofocus"
+            tabindex="0" aria-label="Vista da área dos cacifos do balneário e vestiário feminino. - estudio ..."
+            role="button">" alt="Saco e equipamento no cacifo">
+          <figcaption class="cap">Balneário e cacifos</figcaption>
+        </figure>
+        <figure class="shot" data-category="eventos">
+          <img src="https://wallpapercave.com/wp/wp1854433.jpg" alt="Competição de CrossFit" class=" nofocus"
+            tabindex="0" aria-label="CrossFit Games Wallpapers - Wallpaper Cave" role="button" data-bm="7">"
+          alt="Competição de Crossfit">
+          <figcaption class="cap">Competição de Crossfit</figcaption>
+        </figure>
+        <figure class="shot" data-category="instalacoes">
+          <img src="https://www.nit.pt/wp-content/uploads/2023/02/00277b77efe5a87279cf99bf6e1a0271-754x394.jpg"
+            alt="Centro de Artes marciais" class=" nofocus" tabindex="0" aria-label="Centro para as Artes Marciais"
+            role="button">
+          <figcaption class="cap">Centro de Artes Marciais</figcaption>
+        </figure>
+        <figure class="shot" data-category="instalacoes">
+          <img
+            src="https://img.freepik.com/fotos-premium/uma-area-de-recepcao-com-um-sofa-confortavel-e-uma-mesa-funcional-area-de-recepcao-de-ginasio-com-uma-mesa-de-boas-vindas-e-um-sofa_538213-28540.jpg"
+            alt="Moveis Recepcao Imagens – Download Grátis no Freepik" class=" nofocus" tabindex="0"
+            aria-label="Moveis Recepcao Imagens – Download Grátis no Freepik" role="button">" alt="Receção">
+          <figcaption class="cap">Receção</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- Footer -->
