@@ -22,7 +22,6 @@ body {
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -149,7 +148,6 @@ body {
 
 /* título principal "Galeria" */
 .gallery-hero h1 {
-  font-family: "Times New Roman", Georgia, serif;
   font-weight: 700;
   font-size: 2.6rem;
   line-height: 1.2;

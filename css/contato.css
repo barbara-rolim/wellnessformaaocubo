@@ -27,30 +27,25 @@ p{ margin:.4rem 0 1rem; }
 
 
 /* ===== Header ===== */
-.site-header{ background:#fff; position:sticky; top:0; z-index:10; }
-.header-inner{ display:flex; align-items:center; gap:1rem; padding:.9rem 0; }
-.divider{ height:1px; background:var(--line); }
-
-.brand{
-  display:flex; align-items:center; gap:.5rem; color:var(--gold);
-  text-decoration:none; font-weight:800;
+.navbar-brand {
+  font-family: "Monoton";
+  font-size: 2.4rem;
+  font-weight: 80;
+  color: a; 
 }
-.brand .brand-icon{ font-size:20px; line-height:1; }
-.brand .brand-name{ color:var(--text); }
-.brand .brand-name sup{ font-size:.6em; vertical-align:super; margin-left:.05em; }
 
-.nav .nav-list{ list-style:none; display:flex; gap:1.4rem; margin:0; padding:0; }
-.nav .nav-list a{ color:#555b63; text-decoration:none; font-weight:600; }
-.nav .nav-list a:hover{ color:#2d343a; }
-.nav .nav-list .is-active{ color:var(--gold); }
-
-.btn{
-  display:inline-flex; align-items:center; justify-content:center;
-  border-radius:8px; padding:.6rem .95rem; font-weight:700; text-decoration:none;
+.container-fluid{
+    display: flex;
+    opacity: 1;
+    background-color: #ffffff;
 }
-.btn-gold{ background:var(--gold); color:#fff; border:1px solid color-mix(in oklab, var(--gold), black 15%); }
-.btn-gold:hover{ filter:brightness(1.05); }
-.btn-block{ width:100%; }
+
+.navbar-toggler-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
 
 /* ===== Título ===== */
