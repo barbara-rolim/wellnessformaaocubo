@@ -62,7 +62,7 @@ html, body {
 /* Páginal Principal - Hero Section */
 
 .hero {
-  background: url("../imagens/maxresdefault.JPG") center/cover no-repeat;
+  background: url("imagens/maxresdefault.JPG") center/cover no-repeat;
   position: relative;
   text-align: center;
   color: white;
