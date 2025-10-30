@@ -1,16 +1,14 @@
 
-/* Fonte */
-.bitcount-grid-single {
-  font-family: "Bitcount Grid Single", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 20px;
+/* Fontes */ 
+
+
+
+.momo-signature-regular {
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0.5,
-    "ELSH" 0,
-    "ELXP" 0;
 }
+
 
 
 .monoton-regular {
@@ -19,6 +17,20 @@
   font-style: normal;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.row {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: -webkit-center;
+}
+
+/* Navbar */
 
 .navbar-brand {
   font-family: "Monoton";
@@ -55,8 +67,16 @@
   color: white;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
   opacity: 0.8;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 2rem;
 }
+
+.botao2{
+  background-color: #d4af37;
+  border-color: black;
+  color: black;
+} 
+
 
 
 /* footer dentro do hero */
@@ -65,7 +85,8 @@
   bottom: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
-  padding: 35px 0;
+  padding: 2rem;
+  color: #d4af37 !important;
 }
 
 .hero-footer h3 {
@@ -75,7 +96,6 @@
 }
 
 .hero-footer p {
-  margin: 0;
   font-size: 0.95rem;
 }
 
@@ -84,24 +104,79 @@
   margin-bottom: 5px;
 }
 
+.hero-text {
+  background: linear-gradient(135deg, #fff5cc, #ffda44);
+  box-shadow:
+    0 0 15px 5px rgba(255, 200, 0, 0.1),
+    0 0 40px 15px rgba(255, 160, 0, 0.08);
+  color: black;
+  border-radius: 12px;
+    width: 100vw;
+  margin: 0;
+  padding: 2rem; 
+}
 
+.hero-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50%;
+  background: inherit;
+  filter: blur(500px);
+  z-index: -1;
+}
 
 /* Depoimentos Section */
 
+.titulodepoimentos{
+  padding: 50px;
+}
+
 .depoimentos{
-  padding: 30px;
   background-color: #f5f5f5;
+  padding: 4rem 1rem;
 }
 
 
 .col-sm-4{
-  padding: 25px;
+  padding: 2rem;
 }
 
 .card-body{
   padding: 25px;
   text-align: center;
 }
+
+.avatar{
+  width: 64px;
+  height: 64px;
+  font-size: 1.25rem;
+  background-color: #d4af37 !important;
+  justify-self: anchor-center;
+  
+}
+
+.card{
+  border: 1px solid #d4af37;
+  transition: 0.9s;
+}
+
+.card:hover {
+  background-color:#d4af37d8;
+  opacity: 0.8;
+  transform: scale(1.03); 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+.botaocliente{
+  color: black;
+  background-color: #d4af37;
+  border-color: black !important;
+}
+
+
 
 /* Logótipo Navbar */
 
@@ -111,12 +186,34 @@
 
 
 
-
-
-
-
-
 /* Avaliações e Prémios */
+
+/* Avaliações */
+
+.icon-wrapper{
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ffe066, #ffd633); /* fundo brilhante */
+  border-radius: 50%; 
+  box-shadow: 0 0 15px #d4af37;
+  justify-self: center;
+  color: black;
+  align-items: center;
+}
+
+
+.bi{
+  color: black !important;
+}
+
+.premios-header{
+  padding: 50px;
+}
+
+.premios {
+  padding: 4rem 1rem;
+}
+
 
 .card{
     max-width: 18rem;
@@ -124,8 +221,8 @@
 }
 
 .row{
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 300px;
+  padding-right: 200px;
 }
 
 .titulopremios{
@@ -135,7 +232,70 @@
 
 
 
+.rating {
+  border: 2px solid #d4af37;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 800px;
+  justify-self: anchor-center;
+}
 
+/* Receitas */
+
+.card{
+  border-color:#d4af37;
+}
+
+.receitas-header{
+  padding: 50px;
+}
+
+.receitas-header-text{
+  color: gray;
+}
+
+
+.receitas{
+  text-align: -webkit-center;
+  background-color: #f5f5f5;
+  padding: 4rem 1rem;
+}
+
+
+.receitas .card-img-top {
+  height: 200px;            
+  object-fit: cover;        
+
+}
+
+
+.receitas-text{
+  color: gray;
+}
+
+.planosreceitas{
+    padding: 2rem;
+}
+
+.receita-info {
+  color: #d4af37;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+
+}
+
+.row{
+  justify-self: center;
+}
+
+
+/* Sobre */
+.textsobrenos{
+  font-family: "Momo Signature", sans-serif;
+  font-size: 20px;
+
+  color: black;
+}
 
 
 
@@ -151,5 +311,8 @@
 .footer-link {
   color: #d4af37;
   text-decoration: none;
-  transition: color 10.0s;
+}
+
+.bi2{
+  color: #d4af37;
 }
