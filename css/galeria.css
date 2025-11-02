@@ -32,110 +32,35 @@ body {
   margin-inline: auto;
 }
 
-/* fontes auxiliares (se precisares aplicar em algum elemento) */
-.monoton-regular {
-  font-family: "Monoton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.bitcount-grid-single {
-  font-family: "Bitcount Grid Single", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0.5,
-    "ELSH" 0,
-    "ELXP" 0;
-}
-
 /* =========================================================
    NAVBAR
    ========================================================= */
-.navbar {
-  background-color: #fff;
-  border-bottom: 1px solid #f0f0f0;
-  padding: 0.6rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.navbar-brand {
+  font-family: "Monoton";
+  font-size: 2.4rem;
+  font-weight: 80;
 }
 
-.nav-inner {
-  width: min(1100px, 92%);
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+.container-fluid{
+    display: flex;
+    opacity: 1;
+    background-color: #ffffff;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  /* fonte do logótipo */
-  font-family: "Monoton", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1;
-  color: #222;
+.navbar-toggler-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-.logo i {
-  font-size: 1.8rem;
-  color: var(--gold); /* dourado */
+.btn{
+    color: black;
 }
 
-.logo sup {
-  font-size: 0.7rem;
-  vertical-align: top;
-}
-
-/* menu de navegação central */
-.nav-links {
-  display: flex;
-  gap: 1.8rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-  font-family: 'Inter', system-ui, sans-serif;
-  font-weight: 400;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
-}
-
-.nav-links a:hover {
-  color: var(--gold);
-}
-
-/* botão "Junte-se a nós" */
-.btn-join {
-  background-color: var(--gold);
-  color: #000;
-  font-family: 'Inter', system-ui, sans-serif;
-  font-weight: 600;
-  font-size: 0.9rem;
-  padding: 0.5rem 1.1rem;
-  border-radius: 6px;
-  border: 0;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.btn-join:hover {
-  background-color: #c29d2f;
-  transform: translateY(-1px);
-}
-
-/* comportamento mobile */
-@media (max-width: 800px) {
-  .nav-links {
-    display: none;
-  }
+.logotipo{
+    color: #d4af37;
 }
 
 /* =========================================================
@@ -356,74 +281,18 @@ body {
 /* =========================================================
    FOOTER
    ========================================================= */
-.site-footer {
-  background-color: #000;
-  color: #d4af37;
-  padding: 2rem 0;
-  margin-top: 2rem;
+.footer{
+    background-color: black;
+    color: #d4af37;
 }
 
-.footer-grid {
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: 2fr 1fr 1fr 1.2fr;
-  width: min(1120px, 92%);
-  margin-inline: auto;
-}
-
-.footer-grid h4 {
-  margin: 0 0 .6rem;
-  font-weight: 700;
+.footer-link {
   color: #d4af37;
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 1rem;
-}
-
-.footer-brand-line {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  margin-bottom: .5rem;
-  color: #d4af37;
-  font-family: "Monoton", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-.footer-brand-line i {
-  color: #d4af37;
-  font-size: 1.4rem;
-}
-
-.footer-grid p,
-.footer-grid a {
-  color: #d4af37;
-  font-size: .9rem;
-  line-height: 1.4;
   text-decoration: none;
-  margin: 0 0 .5rem;
-  font-family: 'Inter', system-ui, sans-serif;
 }
 
-.footer-social {
-  display: flex;
-  gap: .6rem;
-  font-size: 1.2rem;
-  margin-bottom: .75rem;
-  color: #d4af37;
-}
-
-.foot-legal {
-  text-align: center;
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(212,175,55,.4);
-  font-size: .8rem;
-  color: #d4af37;
-  font-family: 'Inter', system-ui, sans-serif;
-}
-
-/* utilidade para ícones bootstrap no footer */
-.bi {
-  color: #d4af37;
+.social-icons a {
+  color: #d4af37;             
+  text-decoration: none;       
+  margin-right: 10px;               
 }
